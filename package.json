@@ -1,0 +1,59 @@
+{
+  "name": "typescript-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "doc": "jsdoc -c jsdoc.conf.json",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:doc": "npm run doc",
+    "show:doc": "live-server doc",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist",
+    "buildtsc": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": "coursar",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@types/jest": "^26.0.24",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.3.0",
+    "core-js": "^3.34.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.2",
+    "jest": "^26.6.3",
+    "jsdoc": "^3.6.4",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^1.6.2",
+    "minimatch": "^3.0.2",
+    "style-loader": "^3.3.3",
+    "ts-jest": "^26.5.6",
+    "ts-loader": "^8.4.0",
+    "typescript": "^3.9.10",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^3.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/myx777/typescript-homework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myx777/typescript-homework/issues"
+  },
+  "homepage": "https://github.com/myx777/typescript-homework#readme"
+}
